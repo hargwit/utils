@@ -1,5 +1,5 @@
 /**
- * A generic predicate that determines whether or not `t` exists.
+ * A predicate that determines whether or not `t` exists.
  *
  * Useful when you have an array of potentially undefined values.
  *

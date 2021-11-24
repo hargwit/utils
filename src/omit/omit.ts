@@ -2,6 +2,7 @@
  * Takes an object and a key name and returns the object without the specified key.
  * The original object is not modified.
  *
+ * @example
  * const obj = { foo: "bar" }
  *
  * const omitted = omit(obj, "foo")

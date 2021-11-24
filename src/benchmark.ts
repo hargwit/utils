@@ -4,6 +4,8 @@
  *
  * Prints the benchmark even if the function throws.
  *
+ * If no label is specified then logs the name of the function.
+ *
  * @example
  *
  * const foo = benchmark(fooRepository.get)() // get took 50ms
@@ -40,13 +42,15 @@ export function benchmark<Args extends unknown[], Z>(fn: (...args: Args) => Z, l
  *
  * Prints the benchmark even if the promise throws.
  *
+ * If no label is specified then logs the name of the function.
+ *
  * @example
  *
- * const foo = benchmark(fooRepository.get)() // get resolved in 50ms
+ * const foo = await benchmark(fooRepository.get)() // get resolved in 50ms
  *
- * const bar = benchmark(barRepository.get, "getBar")() // getBar resolved in 70ms
+ * const bar = await benchmark(barRepository.get, "getBar")() // getBar resolved in 70ms
  *
- * benchmark(fooRepository.throws)() // throws threw in 20ms
+ * await benchmark(fooRepository.throws)() // throws threw in 20ms
  */
 export function benchmarkAsync<Args extends unknown[], Z>(
     fn: (...args: Args) => Promise<Z>,
