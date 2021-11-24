@@ -12,6 +12,7 @@ jobs:
             - uses: actions/setup-node@v2
               with:
                   node-version: '17.x'
+                  registry-url: 'https://registry.npmjs.org'
             - run: npm ci
             - run: npm run lint --if-present
             - run: npm run test --if-present
