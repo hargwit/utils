@@ -11,3 +11,5 @@ export { has } from './has'
 export { pluck } from './pluck'
 
 export { omit } from './omit'
+
+export { map } from './map'
