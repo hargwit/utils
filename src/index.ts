@@ -5,3 +5,5 @@ export { label } from './label'
 export { benchmark, benchmarkAsync } from './benchmark'
 
 export { exists } from './exists'
+
+export { has } from './has'
