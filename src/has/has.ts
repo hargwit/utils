@@ -8,7 +8,7 @@
  * @example
  * type Obj = { foo?: number; bar: number }
  *
- * const arr = [{foo: 1, bar: 2}, { bar: 2}]
+ * const arr: Obj[] = [{foo: 1, bar: 2}, { bar: 2}]
  *
  * arr
  *  .filter(has("foo"))
