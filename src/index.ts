@@ -15,3 +15,5 @@ export { omit } from './omit'
 export { map } from './map'
 
 export { by } from './by'
+
+export { filter } from './filter'
