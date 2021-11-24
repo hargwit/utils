@@ -1,1 +1,1 @@
-console.log('Hello world!')
+export { trace } from './trace'
