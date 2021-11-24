@@ -9,3 +9,5 @@ export { exists } from './exists'
 export { has } from './has'
 
 export { pluck } from './pluck'
+
+export { omit } from './omit'
